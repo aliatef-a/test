@@ -1,0 +1,131 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.hero .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero .swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero .swiper-content .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.hero .swiper-content .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.633);
+} 
+
+.hero .swiper-content .img .text {
+  position: absolute;
+  z-index: 3;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero .swiper-content .img .text {
+  width: 100%;
+}
+.hero .swiper-content .img .text h2 {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.hero .swiper-content .img .text span {
+  color: #EFCF6F;
+  font-weight: 500;
+  font-size: 54px;
+} 
+.hero .swiper-content .img .text p {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 20px;
+}
+.hero .swiper-button-next , .swiper-button-prev {
+  color: #FFFFFF !important;
+  padding: 0 7%;
+}
+.hero .swiper-button-next::after , .swiper-button-prev::after {
+  font-size: 25px !important;
+}
+.hero .swiper-pagination-bullet {
+  background: #FFFFFF99 !important;
+  width: 12px !important;
+  height: 12px !important;
+  margin: 8px !important;
+}
+.hero .swiper-pagination-bullet-active {
+  background: #EFCF6F !important;
+}
+
+
+/* responsive */
+
+@media (max-width: 1000px ) {
+  .hero .swiper-content .img .text {
+    width: 80%;
+  }
+  .hero .swiper-content .img .text h2{
+    font-size: 40px;
+  }
+  .hero .swiper-content .img .text span {
+    font-size: 49px;
+  }
+  .hero .swiper-content .img .text p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 800px ) {
+  .hero .swiper-content .img .text h2{
+    font-size: 30px;
+  }
+  .hero .swiper-content .img .text span {
+    font-size: 39px;
+  }
+  .hero .swiper-content .img .text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px ) {
+  .hero .swiper-content .img .text span {
+    font-size: 35px;
+  }
+  .hero .swiper-content .img .text p {
+    font-size: 12px;
+  }
+}

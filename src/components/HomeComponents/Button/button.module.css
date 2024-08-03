@@ -1,0 +1,57 @@
+.btn {
+  display: inline-block;
+}
+
+.btnYellow a {
+  color: white;
+  background-color: #d7ba64;
+  padding: 12px 59px 12px 59px;
+  border-radius: 16px 0px 16px 0px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.3s;
+  width: 100%;
+}
+.btnYellow a:hover {
+  background-color: #b49c55;
+}
+
+.buttonWhite a {
+  color: #d7ba64;
+  border: 1px solid #d7ba64;
+  padding: 12px 40px 12px 40px;
+  border-radius: 16px 0px 16px 0px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.3s;
+  width: 100%;
+}
+.buttonWhite a:hover {
+  color: #b29b54;
+}
+
+/* responsive */
+@media (max-width: 1090px) {
+  .btnYellow a, .buttonWhite a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 850px) {
+  .btnYellow a, .buttonWhite a {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 715px) {
+  .btnYellow a, .buttonWhite a {
+    font-size: 10px;
+    padding: 12px  32px;
+  }
+}
+@media (max-width: 570px) {
+  .btnYellow a, .buttonWhite a {
+    font-size: 12px;
+    align-items: center;
+  }
+}
+

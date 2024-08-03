@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* font-family: Tajawal; */
+  transition: 0.2s;
+  scroll-behavior: smooth;
+}
+:root {
+  --yellow: #efcf6f;
+  --color-text: #ffffff;
+}
+ul {
+  margin: 0 !important;
+  list-style: none;
+}
+p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+li {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none !important;
+  transition: 0.1s;
+  color: var(--color-text);
+}
+
+

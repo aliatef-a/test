@@ -1,0 +1,43 @@
+:root {
+  --yellow: #efcf6f;
+  --color-text: #ffffff;
+}
+/* icons in navbar */
+.icon {
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+/* overlay dark about img */
+.overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px 95px 4px 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.321);
+}
+/* border of img */
+.vector {
+  top: 80%;
+}
+
+/* responsive */
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1065px !important;
+  }
+}
+@media (max-width: 1090px) {
+  .container {
+    max-width: 900px !important;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    max-width: 870px !important;
+  }
+}

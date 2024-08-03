@@ -1,0 +1,13 @@
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header h2 {
+    color: #262624;
+    font-weight: 700;
+  }
+  .header span {
+    color: #d7ba64;
+  }

@@ -1,0 +1,67 @@
+.cardRate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  width: 620px;
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 31.84px 22.29px 63.69px 0px #00000014;
+  overflow: hidden;
+  gap: 50px;
+  margin-bottom: 130px;
+}
+.Swiper {
+  margin: 0 80px;
+}
+.img {
+  max-width: 220px;
+  height: 100%;
+}
+.img img {
+  max-width: 100%;
+  max-height: 300px;
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cardContent img {
+  max-width: 180px;
+  max-height: 18px;
+}
+.cardContent h4 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  width: 90%;
+}
+.cardContent h5 {
+  color: #f6c61c;
+  font-size: 15px;
+}
+
+.shoppingIconContainer {
+  position: fixed;
+  display: flex;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+.shoppingIcon a {
+  color: #ffffff;
+}
+.shoppingIcon {
+  position: sticky;
+  background-color: #d7ba64;
+  display: inline-block;
+  color: #ffffff;
+  margin: 40px 50px;
+  padding: 20px;
+  border-radius: 50%;
+}
+.shoppingIcon:hover {
+  background-color: #bba359;
+}

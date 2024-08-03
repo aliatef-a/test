@@ -1,0 +1,255 @@
+/* navBar sticky */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px #0000002e;
+  width: 100%;
+  animation-duration: 0.7s;
+  animation-name: fadeInDown;
+  animation-timing-function: ease-out;
+  z-index: 10;
+
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+.navbar .nav-logo {
+  width: 117px;
+  height: 65px;
+}
+.navbar .nav-logo img {
+  width: 117px;
+  height: 65px;
+}
+.navbar .nav-links ul {
+  display: flex;
+  align-items: center;
+  gap: 61px;
+}
+
+.active {
+  color: var(--yellow) !important;
+  font-weight: 700;
+  border-bottom: 3px solid var(--yellow);
+  border-start-end-radius: 50%;
+}
+.navbar .nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.icon-nav-search {
+  padding: 2px 15px;
+  border-radius: 32px;
+  background-color: #ffffff2b;
+  color: #ffffff8a;
+  outline: none;
+  border: 1px solid;
+}
+.navbar .nav-account {
+  display: flex;
+}
+.nav-icons .account {
+  display: flex;
+  gap: 4px;
+  color: #ffffff;
+  align-items: center;
+}
+.nav-icons .icon {
+  color: #ffffff;
+}
+.nav-icons .visible {
+  width: 300px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.nav-icons .hidden {
+  width: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+/* Dropdown */
+
+.dropdown-toggle::after {
+  display: none;
+  padding: 0;
+}
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  border: none;
+  outline: none;
+  padding: 0;
+  color: #d7ba64;
+}
+.show path {
+  color: #d7ba64;
+}
+.btn {
+  --bs-btn-border-color: none;
+}
+.show .dropdown-menu {
+  padding: 10px 0;
+  text-align: right;
+  background-color: #585858;
+  transform: translate3d(-40px, 37.2px, 0) !important;
+  width: 200px;
+}
+.show .dropdown-menu a {
+  color: #ffffff;
+}
+.show .dropdown-menu a:hover {
+  background-color: #d7ba6480;
+}
+.NumItems {
+  color: #cacaca;
+  font-size: 14px;
+}
+
+/* slideable menu in small screen  */
+.menuSlide {
+  display: none;
+}
+.menuSlide ul a {
+  color: #544827;
+}
+.menuSlide .icon {
+  color: #544827;
+}
+.menuSlide ul {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: start;
+  gap: 14px !important;
+  padding: 0 20px;
+
+}
+.bm-burger-button {
+  position: relative;
+  width: 22px;
+  height: 15px;
+  left: 0;
+  top: 0;
+  padding: 9px;
+}
+
+.bm-burger-bars {
+  background: #FFFFFF;
+}
+.bm-overlay {
+  position: static !important;
+}
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  top: 4% !important;
+}
+.bm-cross-button span {
+  background-color: #544827;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+.bm-menu-wrap {
+  left: 0;
+  top: 25%;
+  height: 100vh !important;
+  width: 33% !important;
+}
+
+.bm-menu {
+  position: static;
+  text-align: center;
+  background: #FFFFFF;
+  font-size: 1.15em;
+  padding: 5.5em 1.5em 0;
+}
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-item {
+  display: inline-block;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* responsive */
+
+@media (max-width: 1200px) {
+  .navbar .nav-links ul {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar .nav-links ul {
+    gap: 35px;
+  }
+  .navbar .nav-icons {
+    gap: 14px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .show .dropdownProfile {
+    transform: translate3d(-6px, 37.2px, 0) !important;
+    width: 140px;
+  }
+  .show .dropdownProfile p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 850px) {
+  .navbar .nav-links {
+    display: none;
+  }
+  .nav-icons .account {
+    display: none;
+  }
+  .menuSlide {
+    display: inline-block;
+  }
+  .container {
+    padding: 0 40px;
+  }
+}
+
+/* @media (max-width: 1000px) {
+  .navbar {
+    flex-wrap: nowrap;
+    max-width: 800px;
+  }
+  .navbar .nav-links ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+} */

@@ -1,0 +1,106 @@
+.footer {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px 40px 6px 40px;
+}
+.footerlinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  gap: 100px;
+}
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
+}
+.contactContainer .contact {
+  font-weight: 400;
+  display: flex;
+  gap: 15px;
+  font-size: 15px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+.links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.links ul a {
+    color: #FFFFFF ;
+}
+.links h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.subscription {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #ffffffb6;
+}
+.subscription h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.subscription h5 {
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 400px;
+    width: 100%;
+}
+.subinput input {
+    max-width: 350px;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    position: relative;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ffffffb6;
+    padding: 8px 40px;
+    
+}
+
+.iconMail {
+    position: absolute;
+    right: 2%;
+    top: 20%;
+}
+.iconarrow {
+    position: absolute;
+    left: 13%;
+    top: 20%;
+    margin-left: 10px;
+    color: #ffffffb6;
+}
+.footerbottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footerbottom .border {
+  width: 100%;
+  height: 2px;
+  background-color: #D7BA6480;
+  margin-top: 50px;
+  margin-bottom: -10px;
+}
+.footerbottom  .text {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  font-size: 13px;
+}
